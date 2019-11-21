@@ -1,0 +1,8 @@
+body {
+
+  font-family:TimesNewRomans;
+  background-image: url(towers.jpg);
+  background-size: cover;
+  margin-left: 80px;
+  color: black;
+}
