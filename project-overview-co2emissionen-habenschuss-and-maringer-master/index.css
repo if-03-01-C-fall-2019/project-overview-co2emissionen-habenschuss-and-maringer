@@ -1,43 +1,68 @@
 
 body {
 
-  font-family:Arial;
-  background-image: url(GreenBackground.jpg);
-  background-size: cover;
-  margin-left: 80px;
-  color: lightyellow;
-}
-
-img{
-  cursor: pointer;
-  border-style: groove;
-}
-
-h1{
-  font-family: Helvetica;
-  font-size: 2.9em;
-  color: white ;
+  font-family:TimesNewRomans;
+  background-color: #7FDBFF;
 }
 h2{
-  font-family: Helvetica;
-  font-size: 2.3em;
-  color: white ;
+  font-family: TimesNewRomans;
+  font-size: 1.3cm;
+  color: #0074D9;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+header{
+  background-color: #7FDBFF;
+}
+header::after{
+  content: '';
+  display: table;
+  clear:both;
 }
 nav{
-  width: 100%;
-  top: 0;
-  display: block;
-  background-color: grey;
+  float: right;
 }
-nav a {
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.logo{
   float: left;
-  color: white;
-  padding: 10px;
+}
+nav li{
+  display: inline-block;
+  margin-left: 7px;
+  padding-top: 7px;
+  position: relative;
+}
+
+nav a {
+  color: #444;
   text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
 }
-a:hover{
-  background-color: green;
+
+nav a:hover{
+  color: #000;
 }
-article{
-  clear: both;
+
+nav a::before{
+  content: '';
+  display: block;
+  height: 5px;
+  width: 100%;
+  background-color: #444;
+
+  position: absolute;
+  top:0%;
+  width: 0%;
+}
+
+nav a:hover::before{
+  width: 100%;
 }
